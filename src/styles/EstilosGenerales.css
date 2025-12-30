@@ -1,0 +1,62 @@
+/* === ESTILOS DE CUERPO Y FILAS (Jordy Pedro Chamba Carrion) === */
+.fila-transparente {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* Fondo blanco con opacidad exacta como pide */
+}
+
+/* Líneas divisorias rosadas para border-bottom en filas o celdas */
+.borde-rosado {
+  border-bottom: 1px solid #ffb6c1; /* Rosado suave; ajusta si la referencia es más fuerte, ej: #ff69b4 */
+}
+
+/* === PAGINACIÓN === */
+.paginacion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* Espacio entre círculos */
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.paginacion-container button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #cccccc; /* Gris claro para inactivos */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.paginacion-container button.active {
+  background-color: #fa8072; /* Color salmón estándar para activo */
+  width: 12px; /* Ligeramente más grande como en la referencia */
+  height: 12px;
+  transform: scale(1.2); /* Efecto de destaque */
+}
+
+.paginacion-container button:hover {
+  background-color: #ffb199; /* Tono más claro al hover */
+}
+
+/* === RESPONSIVE: Scroll horizontal en móviles === */
+.tabla-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .tabla-responsive {
+    font-size: 14px; /* Reduce texto si es necesario */
+  }
+
+  .tabla-responsive table {
+    min-width: 600px; /* Fuerza scroll horizontal si la tabla es ancha, como en la ref */
+  }
+}
