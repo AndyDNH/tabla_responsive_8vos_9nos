@@ -1,0 +1,183 @@
+/* ===========================================
+   ESTILOS GENERALES DEL PROYECTO
+   =========================================== */
+
+/* Estilos globales de la aplicación */
+#app {
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para asegurar que el carrusel no se rompa */
+* {
+  box-sizing: border-box;
+}
+
+/* ===========================================
+   COMPONENTE TABLA GENÉRICA
+   =========================================== */
+
+/* Estilos base del componente */
+.contenedor-tabla {
+  width: 100%;
+  margin: 20px 0;
+  font-family: "Oswald", sans-serif;
+  /* NO aplicar overflow aquí para no afectar el carrusel */
+}
+
+.encabezado-tabla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  background-color: #1dafbf;
+}
+
+.titulo-tabla {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-descarga {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.btn-descarga:hover {
+  background-color: white;
+  color: #1dafbf;
+}
+
+/* Contenedor con scroll horizontal para la tabla */
+.tabla-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabla-datos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+  min-width: 600px;
+  font-family: "Oswald", sans-serif;
+  background-color: white;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+  border: 1px solid #b8e1e8;
+  padding: 14px 16px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tabla-datos th {
+  background-color: #b8e1e8;
+  color: #000;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+/* Todas las filas con el mismo fondo celeste claro */
+.tabla-datos tbody tr {
+  background-color: #e8f4f6;
+}
+
+.tabla-datos td {
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+/* ===========================================
+   BREAKPOINTS RESPONSIVOS
+   =========================================== */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .titulo-tabla {
+    font-size: 1.3rem;
+  }
+
+  .tabla-datos {
+    min-width: 500px;
+  }
+
+  .tabla-datos th,
+  .tabla-datos td {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile grande (481px - 767px) */
+@media screen and (max-width: 767px) {
+  .encabezado-tabla {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5px;
+  }
+
+  .titulo-tabla {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .btn-descarga {
+    width: 100%;
+    text-align: center;
+    padding: 10px 16px;
+  }
+
+  .tabla-datos {
+    min-width: 500px;
+  }
+
+  .tabla-datos th,
+  .tabla-datos td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile pequeño (<480px) */
+@media screen and (max-width: 480px) {
+  .contenedor-tabla {
+    margin: 10px 0;
+  }
+
+  .titulo-tabla {
+    font-size: 1.1rem;
+  }
+
+  .tabla-datos {
+    min-width: 450px; /* Asegura scroll en pantallas muy pequeñas */
+  }
+
+  .tabla-datos th,
+  .tabla-datos td {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+}
