@@ -12,7 +12,26 @@
   margin: 0 auto;
   padding: 20px;
 }
+/* Título principal */
+.titulo-principal {
+  background-color: #1dafbf;
+  text-align: center;
+  padding: 10px 120px;
+  margin: 0 auto 30px auto;
+  border-radius: 8px;
+  display: block;
+  width: fit-content;
+}
 
+.titulo-principal h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
 /* Estilos para asegurar que el carrusel no se rompa */
 * {
   box-sizing: border-box;
@@ -26,21 +45,23 @@
 .contenedor-tabla {
   width: 100%;
   margin: 20px 0;
-  font-family: "Oswald", sans-serif;
   /* NO aplicar overflow aquí para no afectar el carrusel */
 }
 
 .encabezado-tabla {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
-  padding: 12px 20px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
   background-color: #1dafbf;
+  gap: 10px;
+  width: auto;
+  border-radius: 8px;
 }
 
 .titulo-tabla {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   margin: 0;
   font-weight: 400;
@@ -48,23 +69,21 @@
   letter-spacing: 0.5px;
 }
 
-.btn-descarga {
-  background-color: transparent;
+/* Icono de descarga al final del título */
+.icono-descarga {
   color: white;
   text-decoration: none;
-  padding: 8px 16px;
-  border: 2px solid white;
-  border-radius: 4px;
-  font-weight: 400;
-  white-space: nowrap;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  transition: all 0.3s;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
-.btn-descarga:hover {
-  background-color: white;
-  color: #1dafbf;
+.icono-descarga:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
 }
 
 /* Contenedor con scroll horizontal para la tabla */
@@ -79,7 +98,6 @@
   border-collapse: collapse;
   margin-bottom: 0;
   min-width: 600px;
-  font-family: "Oswald", sans-serif;
   background-color: white;
 }
 
@@ -96,7 +114,7 @@
   color: #000;
   font-weight: 500;
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Todas las filas con el mismo fondo celeste claro */
@@ -106,7 +124,7 @@
 
 .tabla-datos td {
   color: #333;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 
@@ -127,27 +145,37 @@
   .tabla-datos th,
   .tabla-datos td {
     padding: 10px;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
 }
 
 /* Mobile grande (481px - 767px) */
 @media screen and (max-width: 767px) {
+  #app {
+    padding: 15px;
+  }
+
+  .titulo-principal {
+    padding: 20px 40px;
+    border-radius: 6px;
+  }
+
+  .titulo-principal h1 {
+    font-size: 1.5rem;
+  }
+
   .encabezado-tabla {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 5px;
+    padding: 12px 15px;
+    gap: 10px;
+    border-radius: 6px;
   }
 
   .titulo-tabla {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
   }
 
-  .btn-descarga {
-    width: 100%;
-    text-align: center;
-    padding: 10px 16px;
+  .icono-descarga {
+    font-size: 1.5rem;
   }
 
   .tabla-datos {
@@ -157,18 +185,40 @@
   .tabla-datos th,
   .tabla-datos td {
     padding: 8px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 /* Mobile pequeño (<480px) */
 @media screen and (max-width: 480px) {
+  #app {
+    padding: 15px;
+  }
+
+  .titulo-principal {
+    padding: 15px 20px;
+    border-radius: 6px;
+  }
+
+  .titulo-principal h1 {
+    font-size: 1.3rem;
+  }
+
   .contenedor-tabla {
     margin: 10px 0;
   }
 
+  .encabezado-tabla {
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+
   .titulo-tabla {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+  }
+
+  .icono-descarga {
+    font-size: 1.3rem;
   }
 
   .tabla-datos {
@@ -178,6 +228,6 @@
   .tabla-datos th,
   .tabla-datos td {
     padding: 6px;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 }

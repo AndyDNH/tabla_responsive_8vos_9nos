@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <TablaGenerica :datos="datosEjemplo" titulo="Resultados Electorales 2024" textoBotonDescarga="Descargar Excel"
-      urlArchivoDescarga="#" />
+    <!-- Título principal -->
+    <div class="titulo-principal">
+      <h1>TABLAS DE RESULTADOS</h1>
+    </div>
+
+    <TablaGenerica :datos="datosEjemplo" titulo="1. DATOS COMPLETOS PRIMERA VUELTA ELECCIONES 2023"
+      textoBotonDescarga="Descargar" urlArchivoDescarga="#" />
   </div>
 </template>
 

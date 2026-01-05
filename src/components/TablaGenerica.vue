@@ -1,10 +1,10 @@
 <template>
   <div class="contenedor-tabla">
-    <!-- Encabezado separado con título y botón -->
+    <!-- Encabezado con título e icono integrados -->
     <div class="encabezado-tabla">
       <h2 class="titulo-tabla">{{ titulo }}</h2>
-      <a :href="urlArchivoDescarga" class="btn-descarga" download="Resultados_Electorales.xlsx">
-        {{ textoBotonDescarga }}
+      <a :href="urlArchivoDescarga" class="icono-descarga" download="Resultados_Electorales.xlsx" title="Descargar">
+        ⬇️
       </a>
     </div>
 
