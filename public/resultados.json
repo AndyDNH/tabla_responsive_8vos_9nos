@@ -1,0 +1,20 @@
+[
+    {
+        "provincia": "Pichincha",
+        "candidato": "LUISA GONZALEZ",
+        "partido_politico": "RC5",
+        "porcentaje": "45.5%"
+    },
+    {
+        "provincia": "Guayas",
+        "candidato": "DANIELA CHACON",
+        "partido_politico": "ID",
+        "porcentaje": "39.2%"
+    },
+    {
+        "provincia": "Azuay",
+        "candidato": "JORGE ARTEAGA",
+        "partido_politico": "UNES",
+        "porcentaje": "50.1%"
+    }
+]

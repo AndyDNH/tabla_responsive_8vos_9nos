@@ -1,0 +1,62 @@
+/* Estilos temporales*/
+/* Cambiar los estilos según sea necesario*/
+.contenedor-tabla {
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.encabezado-tabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.titulo-tabla {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.btn-descarga {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-descarga:hover {
+    background-color: #0056b3;
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-datos th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.paginacion {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
