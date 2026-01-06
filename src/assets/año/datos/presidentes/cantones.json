@@ -1,0 +1,74 @@
+[
+   {
+      "CODPRO": "01",
+      "CODCAN": "260",
+      "CANTON": "CUENCA",
+      "ganador": "ADN",
+      "votos_validos": 350000,
+      "resultados": {
+         "ADN": {
+            "candidato": "DANIEL NOBOA AZIN",
+            "votos": 180000,
+            "porcentaje": 51.42
+         },
+         "RC5": {
+            "candidato": "LUISA GONZALEZ",
+            "votos": 100000,
+            "porcentaje": 28.57
+         },
+         "CONSTRUYE": {
+            "candidato": "CHRISTIAN ZURITA",
+            "votos": 70000,
+            "porcentaje": 20
+         }
+      }
+   },
+   {
+      "CODPRO": "01",
+      "CODCAN": "265",
+      "CANTON": "GUALACEO",
+      "ganador": "RC5",
+      "votos_validos": 40000,
+      "resultados": {
+         "ADN": {
+            "candidato": "DANIEL NOBOA AZIN",
+            "votos": 15000,
+            "porcentaje": 37.5
+         },
+         "RC5": {
+            "candidato": "LUISA GONZALEZ",
+            "votos": 20000,
+            "porcentaje": 50
+         },
+         "CONSTRUYE": {
+            "candidato": "CHRISTIAN ZURITA",
+            "votos": 5000,
+            "porcentaje": 12.5
+         }
+      }
+   },
+   {
+      "CODPRO": "17",
+      "CODCAN": "1701",
+      "CANTON": "QUITO",
+      "ganador": "RC5",
+      "votos_validos": 900000,
+      "resultados": {
+         "ADN": {
+            "candidato": "DANIEL NOBOA AZIN",
+            "votos": 300000,
+            "porcentaje": 33.33
+         },
+         "RC5": {
+            "candidato": "LUISA GONZALEZ",
+            "votos": 450000,
+            "porcentaje": 50
+         },
+         "CONSTRUYE": {
+            "candidato": "CHRISTIAN ZURITA",
+            "votos": 150000,
+            "porcentaje": 16.66
+         }
+      }
+   }
+]
