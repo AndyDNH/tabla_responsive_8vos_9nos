@@ -1,0 +1,52 @@
+[
+   {
+      "CODPRO": "01",
+      "PROVINCIA": "AZUAY",
+      "votos_validos": 448492,
+      "votos_blancos": 8775,
+      "votos_nulos": 37454,
+      "ganador": "ADN",
+      "resultados": {
+         "ADN": {
+            "candidato": "DANIEL NOBOA AZIN",
+            "votos": 206001,
+            "porcentaje": 45.93
+         },
+         "RC5": {
+            "candidato": "LUISA GONZALEZ",
+            "votos": 150200,
+            "porcentaje": 33.5
+         },
+         "CONSTRUYE": {
+            "candidato": "CHRISTIAN ZURITA",
+            "votos": 92291,
+            "porcentaje": 20.57
+         }
+      }
+   },
+   {
+      "CODPRO": "17",
+      "PROVINCIA": "PICHINCHA",
+      "votos_validos": 1200500,
+      "votos_blancos": 15000,
+      "votos_nulos": 50000,
+      "ganador": "RC5",
+      "resultados": {
+         "ADN": {
+            "candidato": "DANIEL NOBOA AZIN",
+            "votos": 400000,
+            "porcentaje": 33.31
+         },
+         "RC5": {
+            "candidato": "LUISA GONZALEZ",
+            "votos": 600500,
+            "porcentaje": 50.02
+         },
+         "CONSTRUYE": {
+            "candidato": "CHRISTIAN ZURITA",
+            "votos": 200000,
+            "porcentaje": 16.66
+         }
+      }
+   }
+]

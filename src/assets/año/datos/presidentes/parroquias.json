@@ -1,0 +1,58 @@
+[
+   {
+      "CODPAR": "285",
+      "CODCAN": "260",
+      "PARROQUIA": "BAÑOS",
+      "ganador": "ADN",
+      "resultados": {
+         "VOTOS": {
+            "candidato": "VALIDOS",
+            "votos": 16323,
+            "porcentaje": 100
+         },
+         "ADN": {
+            "candidato": "DANIEL NOBOA AZIN",
+            "votos": 7088,
+            "porcentaje": 43.42
+         },
+         "RC5": {
+            "candidato": "LUISA GONZALEZ",
+            "votos": 5000,
+            "porcentaje": 30.63
+         },
+         "CONSTRUYE": {
+            "candidato": "CHRISTIAN ZURITA",
+            "votos": 4235,
+            "porcentaje": 25.95
+         }
+      }
+   },
+   {
+      "CODPAR": "290",
+      "CODCAN": "260",
+      "PARROQUIA": "TOTORACOCHA",
+      "ganador": "ADN",
+      "resultados": {
+         "VOTOS": {
+            "candidato": "VALIDOS",
+            "votos": 25000,
+            "porcentaje": 100
+         },
+         "ADN": {
+            "candidato": "DANIEL NOBOA AZIN",
+            "votos": 15000,
+            "porcentaje": 60
+         },
+         "RC5": {
+            "candidato": "LUISA GONZALEZ",
+            "votos": 8000,
+            "porcentaje": 32
+         },
+         "CONSTRUYE": {
+            "candidato": "CHRISTIAN ZURITA",
+            "votos": 2000,
+            "porcentaje": 8
+         }
+      }
+   }
+]
